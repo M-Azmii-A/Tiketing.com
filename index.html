@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiketing.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Tiketing.com Logo" id="logo">
+        <h1>Tiketing.com</h1>
+        <nav>
+            <ul>
+                <li><a href="#jadwal">Jadwal</a></li>
+                <li><a href="#pemesanan">Tiket</a></li>
+                <li><a href="#layanan">Layanan </a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="jadwal">
+        <h2>Jadwal Keberangkatan</h2>
+        <table id="tabel-jadwal">
+            <thead>
+                <tr>
+                    <th>Rute</th>
+                    <th>Waktu Keberangkatan</th>
+                    <th>Harga</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data jadwal akan diisi oleh JavaScript -->
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="pemesanan">
+        <h2>Pemesanan Tiket</h2>
+        <form id="form-pemesanan">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+            
+            <label for="rute">Rute:</label>
+            <select id="rute" required>
+                <option value="">Pilih Rute</option>
+            </select>
+            
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" id="tanggal" required>
+            
+            <label for="jumlah">Jumlah Tiket:</label>
+            <input type="number" id="jumlah" min="1" required>
+            
+            <button type="submit">Pesan Tiket</button>
+        </form>
+        <div id="konfirmasi"></div>
+    </section>
+    
+    <section id="layanan">
+        <h2>Layanan Tambahan</h2>
+        <ul>
+            <li><strong>Pemesanan Tiket Online:</strong> Pesan tiket bus dari rumah tanpa antri.</li>
+            <li><strong>Pembayaran Aman:</strong> Integrasi dengan e-wallet seperti GoPay, OVO, atau kartu kredit.</li>
+            <li><strong>Notifikasi Real-Time:</strong> Dapatkan update jadwal dan konfirmasi via email/SMS.</li>
+            <li><strong>Layanan Tambahan Bus:</strong> Tambahkan opsi seperti kursi premium, makanan ringan, WiFi onboard, atau asuransi perjalanan.</li>
+            <li><strong>Pencarian Fleksibel:</strong> Filter jadwal berdasarkan tanggal, rute, atau harga.</li>
+            <li><strong>Dukungan Pelanggan 24/7:</strong> Chatbot atau hotline untuk bantuan.</li>
+        </ul>
+    </section>
+    
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <h3>Visi</h3>
+        <p>Menjadi platform terdepan dalam menyediakan solusi transportasi bus yang mudah, aman, dan terjangkau untuk semua orang, menghubungkan kota-kota di Indonesia dengan teknologi modern.</p>
+        <h3>Misi</h3>
+        <ul>
+            <li>Menyediakan informasi jadwal bus yang akurat dan real-time.</li>
+            <li>Memfasilitasi pemesanan tiket yang cepat dan tanpa ribet.</li>
+            <li>Meningkatkan pengalaman perjalanan dengan layanan tambahan berkualitas.</li>
+            <li>Berkomitmen pada keberlanjutan dan keselamatan pengguna.</li>
+        </ul>
+    </section>
+    
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Untuk pemesanan tiket atau pertanyaan, hubungi kami melalui:</p>
+        <ul>
+            <li><strong>Email:</strong> support@busjadwal.com</li>
+            <li><strong>Telepon:</strong> +62 21 1234 5678</li>
+            <li><strong>WhatsApp:</strong> +62 812 3456 7890</li>
+            <li><strong>Alamat:</strong> Jl. Transportasi No. 123, Jakarta Pusat, Indonesia</li>
+            <li><strong>Jam Operasional:</strong> Senin - Minggu, 08:00 - 22:00 WIB</li>
+        </ul>
+        <p>Atau isi formulir di bawah untuk pesan langsung:</p>
+        <form id="form-kontak">
+            <label for="nama-kontak">Nama:</label>
+            <input type="text" id="nama-kontak" required>
+            
+            <label for="email-kontak">Email:</label>
+            <input type="email" id="email-kontak" required>
+            
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" rows="4" required></textarea>
+            
+            <button type="submit">Kirim Pesan</button>
+        </form>
+        <div id="konfirmasi-kontak"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
