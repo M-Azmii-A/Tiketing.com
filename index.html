@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tiketing.com - Platform pemesanan tiket bus online terpercaya di Indonesia. Lihat jadwal, pesan tiket, dan nikmati layanan premium.">
+    <meta name="keywords" content="tiket bus, jadwal bus, pemesanan tiket, transportasi Indonesia">
     <title>Tiketing.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,17 +15,19 @@
         <h1>Tiketing.com</h1>
         <nav>
             <ul>
-                <li><a href="#jadwal">Jadwal</a></li>
-                <li><a href="#pemesanan">Tiket</a></li>
-                <li><a href="#layanan">Layanan </a></li>
-                <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#jadwal">Jadwal Keberangkatan</a></li>
+                <li><a href="#pemesanan">Pemesanan Tiket</a></li>
+                <li><a href="#tampilan">Tampilan Awal</a></li>
+                <li><a href="#layanan">Layanan Tambahan</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak Kami</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="jadwal">
+    <section id="jadwal" class="fade-in">
         <h2>Jadwal Keberangkatan</h2>
+        <p>Lihat jadwal bus terbaru dari berbagai operator terpercaya. Kami menyediakan informasi real-time untuk memudahkan perencanaan perjalanan Anda.</p>
         <table id="tabel-jadwal">
             <thead>
                 <tr>
@@ -38,10 +43,11 @@
         </table>
     </section>
     
-    <section id="pemesanan">
+    <section id="pemesanan" class="fade-in">
         <h2>Pemesanan Tiket</h2>
+        <p>Pesan tiket bus Anda dengan cepat dan aman. Isi formulir di bawah dan dapatkan konfirmasi instan.</p>
         <form id="form-pemesanan">
-            <label for="nama">Nama:</label>
+            <label for="nama">Nama Lengkap:</label>
             <input type="text" id="nama" required>
             
             <label for="rute">Rute:</label>
@@ -49,31 +55,62 @@
                 <option value="">Pilih Rute</option>
             </select>
             
-            <label for="tanggal">Tanggal:</label>
+            <label for="tanggal">Tanggal Keberangkatan:</label>
             <input type="date" id="tanggal" required>
             
             <label for="jumlah">Jumlah Tiket:</label>
             <input type="number" id="jumlah" min="1" required>
             
-            <button type="submit">Pesan Tiket</button>
+            <button type="submit">Pesan Sekarang</button>
         </form>
         <div id="konfirmasi"></div>
     </section>
     
-    <section id="layanan">
-        <h2>Layanan Tambahan</h2>
-        <ul>
-            <li><strong>Pemesanan Tiket Online:</strong> Pesan tiket bus dari rumah tanpa antri.</li>
-            <li><strong>Pembayaran Aman:</strong> Integrasi dengan e-wallet seperti GoPay, OVO, atau kartu kredit.</li>
-            <li><strong>Notifikasi Real-Time:</strong> Dapatkan update jadwal dan konfirmasi via email/SMS.</li>
-            <li><strong>Layanan Tambahan Bus:</strong> Tambahkan opsi seperti kursi premium, makanan ringan, WiFi onboard, atau asuransi perjalanan.</li>
-            <li><strong>Pencarian Fleksibel:</strong> Filter jadwal berdasarkan tanggal, rute, atau harga.</li>
-            <li><strong>Dukungan Pelanggan 24/7:</strong> Chatbot atau hotline untuk bantuan.</li>
-        </ul>
+    <section id="tampilan" class="fade-in">
+        <h2>Tampilan Awal</h2>
+        <p>Selamat datang di Tiketing.com, platform terdepan untuk pemesanan tiket bus di Indonesia. Dengan teknologi canggih, kami menghubungkan Anda dengan rute favorit tanpa ribet.</p>
+        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bus di jalan raya" style="width:100%; max-width:800px;">
     </section>
     
-    <section id="tentang">
+    <section id="layanan" class="fade-in">
+        <h2>Layanan Tambahan</h2>
+        <div class="layanan-grid">
+            <div class="layanan-item">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pemesanan online">
+                <h3>Pemesanan Tiket Online</h3>
+                <p>Pesan dari rumah tanpa antri. Proses cepat dalam hitungan menit.</p>
+            </div>
+            <div class="layanan-item">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pembayaran aman">
+                <h3>Pembayaran Aman</h3>
+                <p>Integrasi dengan e-wallet dan kartu kredit untuk transaksi aman.</p>
+            </div>
+            <div class="layanan-item">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Notifikasi real-time">
+                <h3>Notifikasi Real-Time</h3>
+                <p>Dapatkan update jadwal dan konfirmasi via email/SMS.</p>
+            </div>
+            <div class="layanan-item">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Layanan premium">
+                <h3>Layanan Tambahan Bus</h3>
+                <p>Kursi premium, WiFi, makanan, dan asuransi perjalanan.</p>
+            </div>
+            <div class="layanan-item">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pencarian fleksibel">
+                <h3>Pencarian Fleksibel</h3>
+                <p>Filter berdasarkan tanggal, rute, harga, dan operator.</p>
+            </div>
+            <div class="layanan-item">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dukungan 24/7">
+                <h3>Dukungan Pelanggan 24/7</h3>
+                <p>Chatbot dan hotline siap membantu kapan saja.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tentang" class="fade-in">
         <h2>Tentang Kami</h2>
+        <p>Tiketing.com didirikan untuk merevolusi transportasi bus di Indonesia dengan fokus pada kemudahan, keamanan, dan inovasi.</p>
         <h3>Visi</h3>
         <p>Menjadi platform terdepan dalam menyediakan solusi transportasi bus yang mudah, aman, dan terjangkau untuk semua orang, menghubungkan kota-kota di Indonesia dengan teknologi modern.</p>
         <h3>Misi</h3>
@@ -83,13 +120,14 @@
             <li>Meningkatkan pengalaman perjalanan dengan layanan tambahan berkualitas.</li>
             <li>Berkomitmen pada keberlanjutan dan keselamatan pengguna.</li>
         </ul>
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tim Tiketing.com" style="width:100%; max-width:600px;">
     </section>
     
-    <section id="kontak">
+    <section id="kontak" class="fade-in">
         <h2>Kontak Kami</h2>
         <p>Untuk pemesanan tiket atau pertanyaan, hubungi kami melalui:</p>
         <ul>
-            <li><strong>Email:</strong> support@busjadwal.com</li>
+            <li><strong>Email:</strong> support@tiketing.com</li>
             <li><strong>Telepon:</strong> +62 21 1234 5678</li>
             <li><strong>WhatsApp:</strong> +62 812 3456 7890</li>
             <li><strong>Alamat:</strong> Jl. Transportasi No. 123, Jakarta Pusat, Indonesia</li>
@@ -97,7 +135,7 @@
         </ul>
         <p>Atau isi formulir di bawah untuk pesan langsung:</p>
         <form id="form-kontak">
-            <label for="nama-kontak">Nama:</label>
+            <label for="nama-kontak">Nama Lengkap:</label>
             <input type="text" id="nama-kontak" required>
             
             <label for="email-kontak">Email:</label>
@@ -110,6 +148,13 @@
         </form>
         <div id="konfirmasi-kontak"></div>
     </section>
+    
+    <footer>
+        <p>&copy; 2023 Tiketing.com. All rights reserved. | <a href="#tentang">Tentang Kami</a> | <a href="#kontak">Kontak</a></p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
