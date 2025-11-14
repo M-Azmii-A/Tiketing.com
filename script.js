@@ -29,7 +29,7 @@ function tampilkanJadwal() {
 // Fungsi untuk memilih rute dari jadwal
 function pilihRute(rute) {
     document.querySelector('#rute').value = rute;
-    document.querySelector('#pemesanan').scrollIntoView();
+    document.querySelector('#pemesanan').scrollIntoView({ behavior: 'smooth' });
 }
 
 // Fungsi untuk menangani pemesanan
@@ -61,6 +61,15 @@ document.querySelector('#form-kontak').addEventListener('submit', function(e) {
     
     // Reset form
     this.reset();
+});
+
+// Smooth scroll untuk navbar
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
 });
 
 // Jalankan saat halaman load
